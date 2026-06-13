@@ -12,6 +12,10 @@
 ![Tavily](https://img.shields.io/badge/Tavily-Web_Search-22C55E)
 ![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B?logo=streamlit&logoColor=white)
 
+<a href="https://replit.com/github/dglabsxyz/clinical-evidence-synthesizer"><img src="https://replit.com/badge?caption=Run%20on%20Replit" alt="Run on Replit" height="40"></a>
+
+<sub>One-click import into Replit — then add your own <code>DASHSCOPE_API_KEY</code> and <code>TAVILY_API_KEY</code> in <b>Secrets</b> and press Run.</sub>
+
 <img src="infographics/01-crag-architecture.png" alt="CRAG architecture" width="860">
 
 </div>

@@ -1,5 +1,12 @@
-run = "streamlit run app.py --server.address 0.0.0.0 --server.port 5000 --server.headless true --server.enableCORS false --server.enableXsrfProtection false"
+modules = ["python-3.11"]
 entrypoint = "app.py"
+run = "streamlit run app.py --server.address 0.0.0.0 --server.port 5000 --server.headless true --server.enableCORS false --server.enableXsrfProtection false"
 
-[nix]
-channel = "stable-24_05"
+[deployment]
+deploymentTarget = "autoscale"
+build = ["sh", "-c", "pip install --break-system-packages -r requirements.txt"]
+run = ["streamlit", "run", "app.py", "--server.address", "0.0.0.0", "--server.port", "5000", "--server.headless", "true", "--server.enableCORS", "false", "--server.enableXsrfProtection", "false"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
