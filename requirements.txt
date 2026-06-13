@@ -1,0 +1,7 @@
+langgraph
+openai
+tavily-python
+psycopg[binary]
+pgvector
+datasets
+streamlit
